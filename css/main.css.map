@@ -3,7 +3,9 @@
     "mappings": "",
     "sources": [
         "../SASS/main.scss",
-        "../SASS/_variables.scss"
+        "../SASS/ utils/_variables.scss",
+        "../SASS/ utils/_visually-hidden.scss",
+        "../SASS/components/_header.scss"
     ],
     "names": [],
     "file": "main.css"

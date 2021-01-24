@@ -1,5 +1,7 @@
 :root {
   --main-font: "roboto", sans-serif;
+  --accent-font: "raleway" sans-serif;
+
   --color-accent: #2196f3;
   --main-font-color: #212121;
   --main-grey-color: #757575;
@@ -31,9 +33,6 @@ body {
 address {
   font-style: normal;
 }
-.portfolio {
-  border: 1px solid #ececec;
-}
 img {
   display: block;
 }
@@ -44,14 +43,14 @@ img {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  font-family: Raleway;
+  font-family: var(--accent-font);
   font-style: normal;
 }
 .logo-web {
   color: var(--color-accent);
 }
 .logo-footer {
-  font-family: Raleway;
+  font-family: var(--accent-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
@@ -144,6 +143,8 @@ img {
 }
 /*end-header*/
 /* hero */
+
+/*modal*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -353,6 +354,8 @@ img {
   border: none;
   cursor: pointer;
 }
+/*end modal*/
+
 .hero .container {
   display: flex;
   flex-direction: column;
@@ -501,6 +504,10 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-font-color);
 }
+
+/* end what we are doing */
+
+/* our team */
 .section-team h2 {
   font-weight: 700;
   font-size: 36px;
@@ -509,9 +516,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-font-color);
 }
-/* end what we are doing */
-
-/* our team */
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -764,6 +768,9 @@ img {
 
 /* portfolio */
 /* h1 our works */
+.portfolio {
+  border: 1px solid #ececec;
+}
 .btn-container {
   display: flex;
   justify-content: center;
