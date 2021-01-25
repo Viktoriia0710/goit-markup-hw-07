@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--bcg-icons-index);
+  background-color: $bcg-icons-index;
   border-radius: 4px;
   width: 270px;
   height: 120px;
@@ -33,12 +33,12 @@
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-font-color);
+  color: $main-font-color;
 }
 .section p {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--main-grey-color);
+  color: $main-grey-color;
 }

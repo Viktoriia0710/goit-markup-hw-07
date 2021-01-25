@@ -4,7 +4,7 @@
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-font-color);
+  color: $main-font-color;
 }
 .section-team h3 {
   font-weight: 500;
@@ -12,7 +12,7 @@
   line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-font-color);
+  color: $main-font-color;
 }
 .section-team p {
   font-weight: 400;
@@ -20,14 +20,14 @@
   line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-grey-color);
+  color: $main-grey-color;
 }
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .section-team {
-  background: var(--bcg-section-team);
+  background: $bcg-section-team;
 }
 .workers {
   display: flex;
@@ -38,7 +38,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background: var(--main-white-color);
+  background: $main-white-color;
 }
 .workers-photo:not(:last-child) {
   margin-right: 30px;
@@ -69,15 +69,15 @@
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--fill-social-list);
+
+  fill: $fill-social-list;
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.list-links:hover,
-.list-links:focus {
-  background: var(--color-accent);
-}
-.list-links:hover {
-  fill: var(--main-white-color);
+
+  &:hover,
+  &:focus {
+    background: $color-accent;
+    fill: $main-white-color;
+  }
 }

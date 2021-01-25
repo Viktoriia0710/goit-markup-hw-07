@@ -22,11 +22,6 @@
   margin-bottom: 30px;
   width: 370px;
 }
-.port-cards:hover,
-.port-cards:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 .port-image a {
   display: block;
 }
@@ -43,8 +38,8 @@
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-font-color);
-  background: var(--bcg-section-team);
+  color: $main-font-color;
+  background: $bcg-section-team;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -52,17 +47,19 @@
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button-portfolio:hover,
-.button-portfolio:focus {
-  background: var(--color-accent);
+
+  &:hover,
+  &:focus {
+    background: $color-accent;
+  }
+
+  &:hover,
+  &:focus {
+    color: $main-white-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 
-.button-portfolio:hover,
-.button-portfolio:focus {
-  color: var(--main-white-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 .port-content {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
@@ -75,30 +72,37 @@
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  color: var(--main-grey-color);
-}
-.port-cards:hover .overlay,
-.port-cards:focus .overlay {
-  transform: translateY(0);
+  color: $main-grey-color;
 }
 .port-cards {
   display: block;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .overlay,
+  &:focus .overlay {
+    transform: translateY(0);
+  }
 }
 .section-portfolio h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--main-font-color);
+  color: $main-font-color;
 }
 .section-portfolio .p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  color: var(--main-grey-color);
+  color: $main-grey-color;
 }
 .thumb {
   position: relative;
@@ -118,7 +122,7 @@
   font-size: 18px;
   line-height: 1.555;
   letter-spacing: 0.03em;
-  color: var(--main-white-color);
+  color: $main-white-color;
   background-color: rgba(33, 150, 243, 0.9);
 
   transition-duration: 250ms;

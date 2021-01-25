@@ -4,17 +4,17 @@
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  font-family: var(--accent-font);
+  font-family: $main-font;
   font-style: normal;
 }
 .logo-web {
-  color: var(--color-accent);
+  color: $color-accent;
 }
 .logo-footer {
-  font-family: var(--accent-font);
+  font-family: $main-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: var(--main-white-color);
+  color: $main-white-color;
 }

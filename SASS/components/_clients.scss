@@ -21,13 +21,15 @@
   transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $color-accent;
+    color: $color-accent;
+    border: 1px solid $color-accent;
+  }
 }
-.clients-list:hover,
-.clients-list:focus {
-  fill: var(--color-accent);
-  color: var(--color-accent);
-  border: 1px solid var(--color-accent);
-}
+
 .border:not(:last-child) {
   margin-right: 30px;
 }
@@ -37,6 +39,6 @@
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-font-color);
+  color: $main-font-color;
   margin-bottom: 50px;
 }

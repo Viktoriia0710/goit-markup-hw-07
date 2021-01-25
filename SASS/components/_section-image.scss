@@ -7,7 +7,7 @@
   bottom: 0;
   width: 100%;
   height: 70px;
-  background-color: var(--bcg-text-list);
+  background-color: $bcg-text-list;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
@@ -16,7 +16,7 @@
   text-transform: uppercase;
   padding-top: 27px;
   padding-bottom: 27px;
-  color: var(--main-white-color);
+  color: $main-white-color;
 }
 .section-image .container {
   display: flex;
@@ -37,5 +37,5 @@
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-font-color);
+  color: $main-font-color;
 }

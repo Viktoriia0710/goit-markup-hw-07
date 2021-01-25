@@ -1,7 +1,7 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--bcg-footer);
+  background-color: $bcg-footer;
 }
 .footer-name {
   display: block;
@@ -18,7 +18,7 @@
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--main-white-color);
+  color: $main-white-color;
 }
 .foot-info + .foot-info {
   margin-top: 9px;
@@ -46,7 +46,7 @@
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-white-color);
+  color: $main-white-color;
 }
 .join-item {
   display: flex;
@@ -61,17 +61,19 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: $color-accent;
+  }
 }
-.join-item:hover,
-.join-item:focus {
-  background: var(--color-accent);
-}
+
 .social-items {
   width: 20px;
   height: 20px;
 }
 .join-link {
-  color: var(--color-accent);
+  color: $color-accent;
 }
 .subscribe-title {
   font-weight: 700;
@@ -79,7 +81,7 @@
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-white-color);
+  color: $main-white-color;
 }
 .subscription {
   display: flex;
@@ -112,11 +114,11 @@
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--main-white-color);
-  background: var(--color-accent);
+  color: $main-white-color;
+  background: $color-accent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  fill: var(--main-white-color);
+  fill: $main-white-color;
   border: none;
   cursor: pointer;
 }
