@@ -373,9 +373,6 @@ img {
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.section-team {
   background: #f5f4fa;
 }
 
@@ -753,9 +750,6 @@ img {
 
 .button-portfolio:hover, .button-portfolio:focus {
   background: #2196f3;
-}
-
-.button-portfolio:hover, .button-portfolio:focus {
   color: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -968,7 +962,6 @@ img {
   outline: none;
   border-color: #2196f3;
   fill: #2196f3;
-  color: #2196f3;
 }
 
 .icon {
